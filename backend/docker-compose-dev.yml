@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 services:
   backend:
@@ -17,8 +17,8 @@ services:
     container_name: db
     image: mysql
     environment:
-      MYSQL_DATABASE: "youtube_database"
-      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: 'youtube_database'
+      MYSQL_ROOT_PASSWORD: 'password'
     command: --default-authentication-plugin=mysql_native_password
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
